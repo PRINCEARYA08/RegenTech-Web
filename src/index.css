@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+.hidden-scroll::-webkit-scrollbar{
+ display: none;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  color: #76777a;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+.LinkAnimation {
+  position: relative;
+}
+.LinkAnimation::after {
+  content: " ";
+  height: 2px;
+  position: absolute;
+  bottom: -3px; /* Align the line at the bottom */
+  left: 0;
+  width: 0; /* Start with 0 width */
+  background: #000;
+  transition: width 0.3s ease; /* Add transition for the animation */
+}
+
+.LinkAnimation:hover::after {
+  width: 100%; /* Expand width on hover */
+}
