@@ -68,11 +68,11 @@ const Homepage = () => {
 
           {/* cards */}
 
-          <div className="w-full relative flex flex-col gap-1 my-10">
-            {welcomeCardsDetail.map((cardData, cardIndex) => (
-              <BannerCard key={cardIndex} data={cardData} />
-            ))}
-          </div>
+          <div className="w-full relative flex flex-row gap-4 my-10 overflow-x-auto">
+  {welcomeCardsDetail.map((cardData, cardIndex) => (
+    <BannerCard key={cardIndex} data={cardData} />
+  ))}
+</div>
 
           {/* partner marquees */}
           <div className="relative w-full ">
@@ -152,10 +152,10 @@ const Homepage = () => {
                         <span className="tracking-wide text-xs">
                           {cardDetails.courseRating} Ratings{" "}
                         </span>
-                        <span className="font-bold tracking-wide text-sm">
+                        {/* <span className="font-bold tracking-wide text-sm">
                           {" "}
                           ₹ {cardDetails.coursePrice}{" "}
-                        </span>
+                        </span> */}
                       </div>
                     </div>
                   </div>

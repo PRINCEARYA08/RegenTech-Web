@@ -5,18 +5,18 @@ const welcomeCardsDetails = [{
         case: true,
     },
     {
-        title: "Live Projects",
-        des: "Work on real-world live projects with expert supervision to gain industry-ready skills and confidence.",
+        title: "Digital Marketing",
+        des: "Master SEO, social media, Google Ads, and content strategies to grow brands, generate leads, and build successful digital careers.",
         case: true,
     },
     {
-        title: "Best Courses",
-        des: "From coding to cloud computing - our job-ready courses are the most in-demand in Bhopal.",
+        title: "Animation",
+        des: "Learn Graphic Designing from professionals and master visual storytelling, branding, and design tools for digital and print media.",
         case: true,
     },
     {
-        title: "Award & Reward",
-        des: "Certified programs with placement support and recognition - we reward skill, effort, and success.",
+        title: "Full Stack Web Development",
+        des: "Master Full Stack development with real projects, expert mentorship, and job-ready skills for high-paying tech careers worldwide.",
         case: true,
     },
 ];
@@ -33,14 +33,14 @@ import digi from "../../public/images/courses/digi.webp";
 // ===================== Courses =====================
 const ourPopularCoursesCardsDetails = [{
         img: robo,
-        courseName: "Full Stack Web Development",
-        mentor: "Ms. Ziya Siddiqui",
-        mentorRole: "Designer & Website",
+        courseName: "Robotics",
+        mentor: "Mr. Sumit Janoriya",
+        mentorRole: "Robotics Trainer",
         mentorImg: t3,
-        paraDetails: "Master Full Stack development with real projects, expert mentorship, and job-ready skills for high-paying tech careers worldwide.",
+        paraDetails: "Build and program robots using Arduino, Raspberry Pi, and sensors. Learn mechanics, electronics, and coding for real-world applications.",
         enrollStudent: 50,
         courseRating: 4.5,
-        coursePrice: 18000,
+        // coursePrice: 18000,
     },
     {
         img: digi,
@@ -51,7 +51,7 @@ const ourPopularCoursesCardsDetails = [{
         paraDetails: "Master SEO, social media, Google Ads, and content strategies to grow brands, generate leads, and build successful digital careers.",
         enrollStudent: 30,
         courseRating: 4.4,
-        coursePrice: 13000,
+        // coursePrice: 13000,
     },
     {
         img: auto,
@@ -62,7 +62,7 @@ const ourPopularCoursesCardsDetails = [{
         paraDetails: "Learn Graphic Designing from professionals and master visual storytelling, branding, and design tools for digital and print media.",
         enrollStudent: 80,
         courseRating: 4.7,
-        coursePrice: 10000,
+        // coursePrice: 10000,
     },
 ];
 
