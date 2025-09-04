@@ -37,7 +37,7 @@ const Footer = () => {
                   <FaGooglePlusG />
                 </a>
                 <a
-                  href="https://www.instagram.com/teamregentech?igsh=MXRsOXJwM25kNXo1cA=="
+                  href="https://www.instagram.com/regentechinstitute?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   className="bg-[#4b505d] hover:bg-[#074473] w-10 h-10 rounded-full flex items-center justify-center"
                 >
                   <FaInstagram />
@@ -45,7 +45,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* All Pages */}
+            {/* All Pages  */}
             <div className="w-full sm:w-1/2 lg:w-1/4">
               <h2 className="text-lg font-semibold mb-4">All Pages</h2>
               <ul className="columns-2 space-y-2">
