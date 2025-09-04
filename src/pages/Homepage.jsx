@@ -86,9 +86,28 @@ const Homepage = () => {
         </p>
 
         {/* Button */}
-        <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
-          Case Study ↘
-        </button>
+        {cardData.title === "The Experts" && (
+          <Link to="/regentech/ourteam">
+            <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
+              Meet Experts ↘
+            </button>
+          </Link>
+        )}
+        {cardData.title === "Live Projects" && (
+          <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
+            View Projects ↘
+          </button>
+        )}
+        {cardData.title === "Awards & Achivements" && (
+          <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
+            See Awards ↘
+          </button>
+        )}
+        {cardData.title === "Community" && (
+          <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
+            Join Community ↘
+          </button>
+        )}
       </div>
     ))}
   </div>
