@@ -71,7 +71,7 @@ const details = [
 
   {
     id: 4,
-    name: "Lakshya Sahu",
+    name: "Nitin Barkhade",
     profileImage: t2,
     details:
       "Lakshya Sahu is an experienced Digital Marketing Trainer with a strong command over performance marketing, SEO, social media strategy, and lead generation. With a passion for teaching and a deep understanding of current industry tools and trends, Lakshya has trained countless students and professionals to navigate and succeed in the dynamic digital landscape. His training approach is hands-on, project-based, and results-oriented—focused on equipping learners with real-world skills that are in demand by employers and clients alike. From mastering Meta Ads and Google campaigns to understanding SEO algorithms and content strategies, Lakshya breaks down complex topics into actionable learning. At Regentech, he leads the digital marketing curriculum, developing modules that are constantly updated with the latest industry practices. His sessions are interactive, insight-rich, and designed to empower students to build careers in freelancing, agencies, startups, or their own ventures.Driven by a mission to bridge the gap between theory and execution, Lakshya continues to mentor aspiring marketers, helping them build strong portfolios, land high-impact roles, and stay ahead in the ever-evolving digital economy.",

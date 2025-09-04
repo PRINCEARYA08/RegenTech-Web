@@ -31,7 +31,7 @@ const TeamMember = () => {
       },
     },
     {
-      name: "Lakshya Sahu",
+      name: "Nitin Barkhade",
       role: "Marketing & Management",
       image: t2,
       socials: {
