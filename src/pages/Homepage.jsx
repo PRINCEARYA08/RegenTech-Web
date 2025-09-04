@@ -68,11 +68,33 @@ const Homepage = () => {
 
           {/* cards */}
 
-          <div className="w-full relative flex flex-row gap-4 my-10 overflow-x-auto">
-  {welcomeCardsDetail.map((cardData, cardIndex) => (
-    <BannerCard key={cardIndex} data={cardData} />
-  ))}
+         <div className="w-full relative my-16">
+  <div className="flex flex-row gap-10 overflow-x-auto px-8 py-6 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
+    {welcomeCardsDetail.map((cardData, cardIndex) => (
+      <div
+        key={cardIndex}
+        className="min-w-[320px] md:min-w-[380px] flex flex-col justify-between p-6 bg-gradient-to-b from-gray-900/40 to-gray-800/20 rounded-xl border border-gray-700 shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300"
+      >
+        {/* Title */}
+        <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-6">
+          {cardData.title}
+        </h2>
+
+        {/* Description */}
+        <p className="text-gray-300 leading-relaxed text-sm md:text-base mb-8">
+          {cardData.des}
+        </p>
+
+        {/* Button */}
+        <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
+          Case Study ↘
+        </button>
+      </div>
+    ))}
+  </div>
 </div>
+
+
 
           {/* partner marquees */}
           <div className="relative w-full ">

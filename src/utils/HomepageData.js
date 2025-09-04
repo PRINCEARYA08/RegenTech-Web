@@ -1,22 +1,22 @@
 // ===================== Welcome Cards =====================
 const welcomeCardsDetails = [{
         title: "The Experts",
-        des: "Learn from top industry professionals with years of real-world experience in tech and development.",
+        des: "Learn From Industry Experts And Get Support With Interviews, Portfolios, And Job Readiness.",
         case: true,
     },
     {
-        title: "Digital Marketing",
-        des: "Master SEO, social media, Google Ads, and content strategies to grow brands, generate leads, and build successful digital careers.",
+        title: "Live Projects",
+        des: "Work on real-world projects that build your portfolio and prepare you for high-paying tech careers.",
         case: true,
     },
     {
-        title: "Animation",
-        des: "Learn Graphic Designing from professionals and master visual storytelling, branding, and design tools for digital and print media.",
+        title: "Awards & Achivements",
+        des: "Showcase your skills with globally recognized certifications and awards to boost your career prospects.",
         case: true,
     },
     {
-        title: "Full Stack Web Development",
-        des: "Master Full Stack development with real projects, expert mentorship, and job-ready skills for high-paying tech careers worldwide.",
+        title: "Community",
+        des: "Join A Community Of Learners, Collaborate On Projects, And Build Lasting Professional Relationships.",
         case: true,
     },
 ];
