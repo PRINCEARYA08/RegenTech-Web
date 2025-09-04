@@ -9,6 +9,7 @@ import t5 from "../../public/images/mentors/t5.jpg";
 import t2 from "../../public/images/mentors/t2.jpg";
 import t1 from "../../public/images/mentors/t1.jpg";
 import t3 from "../../public/images/mentors/t3.jpg";
+import t6 from "../../public/images/mentors/t6.jpg";
 // import t4 from "../../public/images/mentors/t4.jpg";
 
 const courseCategoryBtns = [
@@ -113,7 +114,7 @@ const allCoursesDetails = [{
             "https://cdn3d.iconscout.com/3d/free/thumb/free-java-3d-icon-download-in-png-blend-fbx-gltf-file-formats--object-oriented-jvm-logo-applications-coding-lang-pack-logos-icons-7578017.png",
             "https://w7.pngwing.com/pngs/35/874/png-transparent-c-language-logo-c-mobile-developer-programming-programming-language-interface-3d-icon.png",
         ],
-        courseDetailsLine: "Master Full Stack development with real projects, expert mentorship, and job-ready skills for high-paying tech careers worldwide.",
+        courseDetailsLine: "Master Digital Marketing skills including SEO, social media, and content strategy to grow brands and careers.",
     },
     {
         id: 2,
@@ -130,10 +131,25 @@ const allCoursesDetails = [{
             "https://cdn3d.iconscout.com/3d/free/thumb/free-java-3d-icon-download-in-png-blend-fbx-gltf-file-formats--object-oriented-jvm-logo-applications-coding-lang-pack-logos-icons-7578017.png",
             "https://w7.pngwing.com/pngs/35/874/png-transparent-c-language-logo-c-mobile-developer-programming-programming-language-interface-3d-icon.png",
         ],
-        courseDetailsLine: "Master Full Stack development with real projects, expert mentorship, and job-ready skills for high-paying tech careers worldwide.",
+        courseDetailsLine: "Animation is a dynamic art form that brings static images to life through motion, storytelling, and visual effects, captivating audiences across various media platforms.",
     },
     {
+
         id: 3,
+        courseCategory: "civil",
+        courseName: "AutoCAD",
+        mentorName: "Ms. Kajal Gupta",
+        mentorImage: t6,
+        mentorProfession: "AutoCAD Trainer",
+        coursesPrice: "18000",
+        courseImage: "https://images.pexels.com/photos/6964348/pexels-photo-6964348.jpeg",
+        coursesLogos: [
+            "https://static.vecteezy.com/system/resources/previews/012/697/298/non_2x/3d-javascript-logo-design-free-png.png",
+        ],
+        courseDetailsLine: "AutoCAD is a computer-aided design (CAD) software used for creating precise 2D and 3D drawings and models in various industries such as architecture, engineering, and construction.",
+    },
+    {
+        id: 4,
         courseCategory: "trending-tech",
         courseName: "Full Stack Web Development",
         mentorName: "Ms. Ziya Siddiqui",
@@ -149,21 +165,8 @@ const allCoursesDetails = [{
         ],
         courseDetailsLine: "Master Full Stack development with real projects, expert mentorship, and job-ready skills for high-paying tech careers worldwide.",
     },
-    {
 
-        id: 4,
-        courseCategory: "civil",
-        courseName: "AutoCAD",
-        mentorName: "Ms. Kajal Gupta",
-        mentorImage: t5,
-        mentorProfession: "AutoCAD Trainer",
-        coursesPrice: "18000",
-        courseImage: "https://images.pexels.com/photos/6964348/pexels-photo-6964348.jpeg",
-        coursesLogos: [
-            "https://static.vecteezy.com/system/resources/previews/012/697/298/non_2x/3d-javascript-logo-design-free-png.png",
-        ],
-        courseDetailsLine: "Master Full Stack development with real projects, expert mentorship, and job-ready skills for high-paying tech careers worldwide.",
-    }
+
 
 ];
 
