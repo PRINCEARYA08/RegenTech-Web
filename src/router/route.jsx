@@ -10,6 +10,8 @@ const Gallery = lazy(() => import("../pages/Gallery.jsx"));
 const Courses = lazy(() => import("../pages/Courses.jsx"));
 
 const Awards = lazy(() => import("../components/awads/Awards.jsx"));
+const Community = lazy(() => import("../components/Community/community.jsx"));
+const LiveProjects = lazy(() => import("../components/LiveProjects/LiveProjects.jsx"));
 const OurTeam = lazy(() => import("../pages/OurTeam.jsx"));
 const About = lazy(() => import("../pages/About.jsx"));
 const LeaderShip = lazy(() => import("../pages/LeaderShip.jsx"));
@@ -34,10 +36,26 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "liveprojects",
+        element: (
+          <Suspense fallback={<ComponentLoader />}>
+            <LiveProjects />
+          </Suspense>
+        ),
+      },
+      {
         path: "awads",
         element: (
           <Suspense fallback={<ComponentLoader />}>
             <Awards />
+          </Suspense>
+        ),
+      },
+      {
+        path: "community",
+        element: (
+          <Suspense fallback={<ComponentLoader />}>
+            <Community />
           </Suspense>
         ),
       },

@@ -94,9 +94,11 @@ const Homepage = () => {
           </Link>
         )}
         {cardData.title === "Live Projects" && (
-          <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
-            View Projects ↘
-          </button>
+          <Link to="/regentech/liveprojects">
+            <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
+              View Projects ↘
+            </button>
+          </Link>
         )}
         {cardData.title === "Awards & Achivements" && (
           <Link to="/regentech/awads">
@@ -106,9 +108,11 @@ const Homepage = () => {
           </Link>
         )}
         {cardData.title === "Community" && (
-          <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
-            Join Community ↘
-          </button>
+          <Link to="/regentech/community">
+            <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
+              Join Community ↘
+            </button>
+          </Link>
         )}
       </div>
     ))}
