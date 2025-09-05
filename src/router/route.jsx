@@ -10,9 +10,15 @@ const Gallery = lazy(() => import("../pages/Gallery.jsx"));
 
 const Courses = lazy(() => import("../pages/Courses.jsx"));
 
+<<<<<<< HEAD
 const Awards = lazy(() => import("../components/awards/Awards.jsx"));
 const LiveProjects = lazy(() => import("../components/liveProjects/LiveProjects.jsx"));
 const Community = lazy(() => import("../components/community/community.jsx"));
+=======
+const Awards = lazy(() => import("../components/awads/Awards.jsx"));
+const Community = lazy(() => import("../components/Community/community.jsx"));
+const LiveProjects = lazy(() => import("../components/LiveProjects/LiveProjects.jsx"));
+>>>>>>> 86770d50ab18103aa8f87b6c6e3e06c3f75fcd16
 const OurTeam = lazy(() => import("../pages/OurTeam.jsx"));
 const About = lazy(() => import("../pages/About.jsx"));
 const LeaderShip = lazy(() => import("../pages/LeaderShip.jsx"));
@@ -50,6 +56,7 @@ const router = createBrowserRouter([
           </Suspense>
         ),
       },
+<<<<<<< HEAD
        {
         path: "community",
         element: (
@@ -60,9 +67,21 @@ const router = createBrowserRouter([
       },
       {
         path: "awards",
+=======
+      {
+        path: "awads",
+>>>>>>> 86770d50ab18103aa8f87b6c6e3e06c3f75fcd16
         element: (
           <Suspense fallback={<ComponentLoader />}>
             <Awards />
+          </Suspense>
+        ),
+      },
+      {
+        path: "community",
+        element: (
+          <Suspense fallback={<ComponentLoader />}>
+            <Community />
           </Suspense>
         ),
       },
