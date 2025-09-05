@@ -68,22 +68,29 @@ const Whychooseus = () => {
       <hr className="border-zinc-700" />
 
       {/* Feature 4: Global Opportunities */}
-      <section className="w-full min-h-[350px] flex flex-col md:flex-row items-center justify-center px-10 py-10 gap-10">
-        <div className="flex-1 flex items-center justify-center">
-          <img
-            src={serves3}
-            alt="Global Opportunities"
-            className="w-[500px] h-[250px] object-contain rounded-lg"
-          />
-        </div>
-        <div className="flex-1 flex flex-col justify-center gap-4">
-          <h2 className="text-4xl font-bold text-white mb-2">Global Opportunities</h2>
-          <p className="text-base text-white mb-4">
-            Prepare For International Careers With Real-World Projects, Global Exposure, And Industry Mentorship.
-          </p>
-          <EnrollButton title="Contact us" icon={<IoCallOutline />} />
-        </div>
-      </section>
+    <section className="w-full min-h-[350px] flex flex-col md:flex-row items-center justify-center px-10 py-10 gap-10">
+  <div className="flex-1 flex items-center justify-center">
+    <img
+      src={serves3}
+      alt="Global Opportunities"
+      className="w-[500px] h-[250px] object-contain rounded-lg"
+    />
+  </div>
+  <div className="flex-1 flex flex-col justify-center gap-4">
+    <h2 className="text-4xl font-bold text-white mb-2">Global Opportunities</h2>
+    <p className="text-base text-white mb-4">
+      Prepare For International Careers With Real-World Projects, Global Exposure, And Industry Mentorship.
+    </p>
+ <a href="tel:9243611149"></a>
+    {/* Contact Us Button */}
+    <button className="flex items-center justify-center gap-2 w-40 h-12 border border-white text-white text-base font-medium rounded-full hover:bg-white hover:text-black transition duration-300">
+  Contact Us
+  <IoCallOutline className="text-lg" />
+</button>
+
+  </div>
+</section>
+
     </div>
   );
 };

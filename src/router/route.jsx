@@ -1,15 +1,18 @@
 import React, { lazy, Suspense } from "react";
-
 import { createBrowserRouter } from "react-router-dom";
 import ComponentLoader from "../components/ComponentLoader.jsx";
 
+// Lazy-loaded components
 const App = lazy(() => import("../App.jsx"));
 const Homepage = lazy(() => import("../pages/Homepage.jsx"));
 const Contact = lazy(() => import("../pages/Contact.jsx"));
 const Gallery = lazy(() => import("../pages/Gallery.jsx"));
+
 const Courses = lazy(() => import("../pages/Courses.jsx"));
 
-const Awards = lazy(() => import("../components/awads/Awards.jsx"));
+const Awards = lazy(() => import("../components/awards/Awards.jsx"));
+const LiveProjects = lazy(() => import("../components/liveProjects/LiveProjects.jsx"));
+const Community = lazy(() => import("../components/community/community.jsx"));
 const OurTeam = lazy(() => import("../pages/OurTeam.jsx"));
 const About = lazy(() => import("../pages/About.jsx"));
 const LeaderShip = lazy(() => import("../pages/LeaderShip.jsx"));
@@ -17,12 +20,18 @@ const LeaderShip = lazy(() => import("../pages/LeaderShip.jsx"));
 const router = createBrowserRouter([
   {
     path: "/regentech/",
-    element: <App />,
+    element: (
+      <Suspense fallback={<ComponentLoader />}>
+        <App />
+      </Suspense>
+    ),
     children: [
       {
         index: true,
         element: (
+          <Suspense fallback={<ComponentLoader />}>
             <Homepage />
+          </Suspense>
         ),
       },
       {
@@ -34,7 +43,23 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "awads",
+        path: "liveprojects",
+        element: (
+          <Suspense fallback={<ComponentLoader />}>
+            <LiveProjects />
+          </Suspense>
+        ),
+      },
+       {
+        path: "community",
+        element: (
+          <Suspense fallback={<ComponentLoader />}>
+            <Community />
+          </Suspense>
+        ),
+      },
+      {
+        path: "awards",
         element: (
           <Suspense fallback={<ComponentLoader />}>
             <Awards />
