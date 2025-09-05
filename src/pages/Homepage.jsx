@@ -99,9 +99,11 @@ const Homepage = () => {
           </button>
         )}
         {cardData.title === "Awards & Achivements" && (
-          <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
-            See Awards ↘
-          </button>
+          <Link to="/regentech/awads">
+            <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
+              See Awards ↘
+            </button>
+          </Link>
         )}
         {cardData.title === "Community" && (
           <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">

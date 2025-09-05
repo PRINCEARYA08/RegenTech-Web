@@ -8,6 +8,8 @@ const Homepage = lazy(() => import("../pages/Homepage.jsx"));
 const Contact = lazy(() => import("../pages/Contact.jsx"));
 const Gallery = lazy(() => import("../pages/Gallery.jsx"));
 const Courses = lazy(() => import("../pages/Courses.jsx"));
+
+const Awards = lazy(() => import("../components/awads/Awards.jsx"));
 const OurTeam = lazy(() => import("../pages/OurTeam.jsx"));
 const About = lazy(() => import("../pages/About.jsx"));
 const LeaderShip = lazy(() => import("../pages/LeaderShip.jsx"));
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<ComponentLoader />}>
             <Contact />
+          </Suspense>
+        ),
+      },
+      {
+        path: "awads",
+        element: (
+          <Suspense fallback={<ComponentLoader />}>
+            <Awards />
           </Suspense>
         ),
       },
