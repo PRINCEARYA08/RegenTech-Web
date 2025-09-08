@@ -1,5 +1,6 @@
 import React from "react";
-import "../../../public/images/partner/p1.png";
+
+
 // Sample data for community members       
 const communityMembers = [
   {
