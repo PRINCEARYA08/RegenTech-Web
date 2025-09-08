@@ -6,7 +6,7 @@ const awardsData = [
     issuer: "TechFest 2024",
     description: "Recognized as the best full-stack developer at TechFest.",
     date: "March 2024",
-    image: "/images/awards/dev-award.png", // Add image in public/images/awards/
+    image: "/images/awards/dev-award.png", // image should be in public/images/awards/
   },
   {
     title: "Hackathon Winner",
@@ -23,11 +23,12 @@ const awardsData = [
     image: "/images/awards/mern-cert.png",
   },
   {
-    title: "Top 10 Finalist",
-    issuer: "Google Code Jam",
-    description: "Secured a place in the top 10 finalists of Google Code Jam regional round.",
-    date: "November 2022",
-    image: "/images/awards/codejam.png",
+    title: "Certificate of Recognition",
+    issuer: "Department for Promotion of Industry and Internal Trade",
+    description:
+      "Recognized as a startup working in 'Technology Hardware' Industry and 'Manufacturing' sector.",
+    date: "December 8, 2022",
+    image: "/images/awards/c1.png",
   },
 ];
 
