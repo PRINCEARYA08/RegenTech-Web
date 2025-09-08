@@ -1,78 +1,77 @@
 import React from "react";
-import "../../../public/images/partner/p1.png";
 // Sample data for community members       
 const communityMembers = [
   {
     id: 1,
     name: "John Doe",
     role: "Full Stack Developer",
-    img: "../../public/images/partner/p1.png", // ✅ use public path directly
+  img: "images/partner/p1.png",
   },
   {
     id: 2,
     name: "Sarah Lee",
     role: "UI/UX Designer",
-    img: "/images/partner/p2.png",
+  img: "images/partner/p2.png",
   },
   {
     id: 3,
     name: "Michael Smith",
     role: "Data Scientist",
-    img: "/images/partner/p3.png",
+  img: "images/partner/p3.jpg",
   },
   {
     id: 4,
     name: "Priya Sharma",
     role: "AI Researcher",
-    img: "/images/partner/p4.png",
+  img: "images/partner/p4.png",
   },
   {
     id: 5,
     name: "David Kim",
     role: "DevOps Engineer",
-    img: "/images/partner/p5.png",
+  img: "images/partner/p5.png",
   },
   {
     id: 6,
     name: "Aisha Khan",
     role: "Mobile App Developer",
-    img: "/images/partner/p6.png",
+  img: "images/partner/p6.png",
   },
   {
     id: 7,
     name: "Carlos Rodriguez",
     role: "Cybersecurity Expert",
-    img: "/images/partner/p7.png",
+  img: "images/partner/p7.png",
   },
   {
     id: 8,
     name: "Emma Wilson",
     role: "Cloud Architect",
-    img: "/images/partner/p8.png",
+  img: "images/partner/p8.png",
   },
   {
     id: 9,
     name: "Liam Johnson",
     role: "Product Manager",
-    img: "/images/partner/p9.png",
+  img: "images/partner/p9.png",
   },
   {
     id: 10,
     name: "Olivia Brown",
     role: "Business Analyst",
-    img: "/images/partner/p10.png",
+  img: "images/partner/p10.png",
   },
   {
     id: 11,
     name: "Noah Davis",
     role: "QA Engineer",
-    img: "/images/partner/p11.png",
+  img: "images/partner/p11.png",
   },
   {
     id: 12,
     name: "Sophia Martinez",
     role: "Frontend Developer",
-    img: "/images/partner/p12.png",
+  img: "images/partner/p12.png",
   },
 ];
 
