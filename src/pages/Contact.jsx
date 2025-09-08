@@ -28,7 +28,7 @@ const Contact = () => {
             {[
               {titele:"call us", icon: <IoIosCall />, details: "Need immediate help? Call us now at +91 9243611149", button: "call us",con: "tel:9243611149"},
               {titele:"Email Us", icon:<MdOutlineEmail /> , details: "Prefer email? Reach out to us at regentechinstitute@gmail.com", button: "Email Us", con:"mailto:regentechinstitute@gmail.com"},
-              {titele:"Chat with Us", icon:<IoChatbubbleEllipsesOutline /> ,details: "Have questions? Start a live chat with one of our agents right now.", button: "Start Chat", con: "https://wa.me/9243611149"},
+              {titele:"Chat with Us", icon:<IoChatbubbleEllipsesOutline /> ,details: "Have questions? Start a live chat with one of our agents right now.", button: "Start Chat", con: "../../../components/contactUs/contactUs.jsx"},
             ].map((det, index) => (
 
             <div 

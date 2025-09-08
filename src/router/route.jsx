@@ -13,6 +13,7 @@ const Courses = lazy(() => import("../pages/Courses.jsx"));
 const Awards = lazy(() => import("../components/awards/Awards.jsx"));
 const LiveProjects = lazy(() => import("../components/liveProjects/LiveProjects.jsx"));
 const Community = lazy(() => import("../components/community/community.jsx"));
+// const ContactUs = lazy(() => import("../components/contactUs/contactUs.jsx"));
 const OurTeam = lazy(() => import("../pages/OurTeam.jsx"));
 const About = lazy(() => import("../pages/About.jsx"));
 const LeaderShip = lazy(() => import("../pages/LeaderShip.jsx"));
@@ -106,6 +107,14 @@ const router = createBrowserRouter([
           </Suspense>
         ),
       },
+      // {
+      //   path: "contactus",
+      //   element: (
+      //     <Suspense fallback={<ComponentLoader />}>
+      //       <ContactUs />
+      //     </Suspense>
+      //   ),
+      // }
     ],
   },
 ]);
