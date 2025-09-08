@@ -1,78 +1,18 @@
 import React from "react";
-// Sample data for community members       
+
 const communityMembers = [
-  {
-    id: 1,
-    name: "John Doe",
-    role: "Full Stack Developer",
-  img: "images/partner/p1.png",
-  },
-  {
-    id: 2,
-    name: "Sarah Lee",
-    role: "UI/UX Designer",
-  img: "images/partner/p2.png",
-  },
-  {
-    id: 3,
-    name: "Michael Smith",
-    role: "Data Scientist",
-  img: "images/partner/p3.jpg",
-  },
-  {
-    id: 4,
-    name: "Priya Sharma",
-    role: "AI Researcher",
-  img: "images/partner/p4.png",
-  },
-  {
-    id: 5,
-    name: "David Kim",
-    role: "DevOps Engineer",
-  img: "images/partner/p5.png",
-  },
-  {
-    id: 6,
-    name: "Aisha Khan",
-    role: "Mobile App Developer",
-  img: "images/partner/p6.png",
-  },
-  {
-    id: 7,
-    name: "Carlos Rodriguez",
-    role: "Cybersecurity Expert",
-  img: "images/partner/p7.png",
-  },
-  {
-    id: 8,
-    name: "Emma Wilson",
-    role: "Cloud Architect",
-  img: "images/partner/p8.png",
-  },
-  {
-    id: 9,
-    name: "Liam Johnson",
-    role: "Product Manager",
-  img: "images/partner/p9.png",
-  },
-  {
-    id: 10,
-    name: "Olivia Brown",
-    role: "Business Analyst",
-  img: "images/partner/p10.png",
-  },
-  {
-    id: 11,
-    name: "Noah Davis",
-    role: "QA Engineer",
-  img: "images/partner/p11.png",
-  },
-  {
-    id: 12,
-    name: "Sophia Martinez",
-    role: "Frontend Developer",
-  img: "images/partner/p12.png",
-  },
+  { id: 1, img: "images/partner/p1.png", name: "John Doe" },
+  { id: 2, img: "images/partner/p2.png", name: "Sarah Lee" },
+  { id: 3, img: "images/partner/p3.jpg", name: "Michael Smith" },
+  { id: 4, img: "images/partner/p4.png", name: "Priya Sharma" },
+  { id: 5, img: "images/partner/p5.png", name: "David Kim" },
+  { id: 6, img: "images/partner/p6.png", name: "Aisha Khan" },
+  { id: 7, img: "images/partner/p7.png", name: "Carlos Rodriguez" },
+  { id: 8, img: "images/partner/p8.png", name: "Emma Wilson" },
+  { id: 9, img: "images/partner/p9.png", name: "Liam Johnson" },
+  { id: 10, img: "images/partner/p10.png", name: "Olivia Brown" },
+  { id: 11, img: "images/partner/p11.png", name: "Noah Davis" },
+  { id: 12, img: "images/partner/p12.png", name: "Sophia Martinez" },
 ];
 
 const Community = () => {
@@ -86,20 +26,18 @@ const Community = () => {
           together to share knowledge, build projects, and grow professionally.
         </p>
 
-        {/* Community Members */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full">
+        {/* Community Logo Gallery */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 w-full">
           {communityMembers.map((member) => (
             <div
               key={member.id}
-              className="bg-gray-800/70 rounded-2xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition"
+              className="flex items-center justify-center bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform"
             >
               <img
                 src={member.img}
                 alt={member.name}
-                className="w-28 h-28 object-cover rounded-full border-4 border-gray-700 mb-4"
+                className="max-h-20 w-auto object-contain"
               />
-              <h3 className="text-xl font-semibold">{member.name}</h3>
-              <p className="text-sm text-gray-400">{member.role}</p>
             </div>
           ))}
         </div>

@@ -20,7 +20,7 @@ const awardsData = [
     issuer: "Udemy / Coursera",
     description: "Completed a professional certification in MERN stack development.",
     date: "June 2023",
-    image: "/images/awards/mern-cert.png",
+    image: "images/awards/mern-cert.png",
   },
   {
     title: "Certificate of Recognition",
@@ -28,7 +28,7 @@ const awardsData = [
     description:
       "Recognized as a startup working in 'Technology Hardware' Industry and 'Manufacturing' sector.",
     date: "December 8, 2022",
-    image: "/images/awards/c1.png",
+    image: "images/awards/c1.png",
   },
 ];
 
