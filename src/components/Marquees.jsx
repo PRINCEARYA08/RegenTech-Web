@@ -62,7 +62,7 @@ const allPartnerImageSrc = [
 const Marquees = () => {
   const [marqueeSrc, setMarqueeSrc] = useState(allPartnerImageSrc);
   return (
-    <div className="my-1 w-full relative overflow-hidden">
+  <div className="my-1 w-full relative overflow-hidden bg-[#6274f7] rounded-3xl shadow-xl py-4">
       {marqueeSrc.map((marqueesImage, index) => (
         <div key={index} className="flex w-full py-4 gap-60 overflow-hidden">
           <motion.div

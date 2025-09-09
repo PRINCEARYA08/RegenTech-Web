@@ -62,11 +62,11 @@ const Gallery = () => {
   const { dark } = useDark();
 
   return (
-    <div className="w-full h-full relative flex flex-col bg-black dark:bg-white dark:text-black text-white pt-20">
-      <div className="w-full  relative flex flex-col justify-between px-10 py-8 gap-10">
+  <div className="w-full h-full min-h-screen relative flex flex-col bg-[#eceaff] text-black pt-20">
+  <div className="w-full  relative flex flex-col justify-between px-10 py-8 gap-10">
         {/* heading */}
 
-        <div className="text-center w-full flex justify-center  flex-col items-center gap-6">
+  <div className="text-center w-full flex justify-center flex-col items-center gap-6">
           <BlurText
             text="Our Gallery"
             delay={150}
@@ -74,7 +74,7 @@ const Gallery = () => {
             direction="top"
             className="text-xl md:text-2xl lg:text-4xl text-shadow-lg font-[Boldonse] w-fit"
           />
-          <p style={{ color: dark === false ? "#ccc" : "#000" }}>
+          <p style={{ color: '#444' }}>
             At Regentech, our strength lies in our mentors. Each tutor is a
             seasoned industry expert dedicated to delivering real-world
             knowledge, personalized guidance, and hands-on training. With a
@@ -84,12 +84,12 @@ const Gallery = () => {
         </div>
         {/* grid box */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {galleryImagesSRC.map((imageSRC, indx) => (
-            <div className="grid gap-4 ">
-              <div className="max-h-[40vw]  md:max-w-[25vw]  overflow-hidden">
+            <div key={indx} className="bg-white rounded-2xl shadow-lg p-2 flex items-center justify-center">
+              <div className="max-h-[40vw] md:max-w-[25vw] overflow-hidden">
                 <img
-                  className="h-full w-full object-cover rounded-lg"
+                  className="h-full w-full object-cover rounded-xl"
                   src={`${imageSRC}`}
                   alt="galleryImage"
                 />

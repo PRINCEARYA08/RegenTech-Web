@@ -130,9 +130,9 @@ const Leaders = () => {
   const [allData, setAllData] = useState(details);
   useEffect(() => {}, [allData]);
   return (
-    <div className="w-full min-h-screen flex flex-col gap-2 bg-black dark:bg-white text-white dark:text-black">
-      <div className="w-full h-[30vh] px-4 ">
-        <div className="w-full h-full relative flex items-end justify-center py-8 border-[1px] dark:border-black border-amber-200 rounded-b-[4rem]">
+    <div className="w-full min-h-screen flex flex-col gap-2 bg-gradient-to-br from-[#e0e7ff] via-[#f3e8ff] to-[#f0f4ff] dark:bg-gradient-to-br dark:from-[#e0e7ff] dark:via-[#f3e8ff] dark:to-[#f0f4ff] text-black">
+      <div className="w-full h-[30vh] px-4">
+        <div className="w-full h-full relative flex items-end justify-center py-8 border-none rounded-b-[4rem]">
           <BlurText
             text="The Skilled Force of Regentech"
             delay={150}
@@ -143,43 +143,45 @@ const Leaders = () => {
         </div>
       </div>
 
-      <div className="w-full h-full relative flex flex-col gap-6 py-6 lg:py-6 px-4 lg:px-10">
+      <div className="w-full h-full relative flex flex-col gap-8 py-8 lg:py-10 px-4 lg:px-10">
         {allData.map((data, indexOfData) => (
           <div
             key={indexOfData}
-            className={`w-full min-h-[30vh] relative flex gap-4 justify-between items-center ${
+            className={`w-full min-h-[30vh] relative flex gap-6 justify-between items-center ${
               data.id % 2
                 ? "flex-col lg:flex-row"
                 : "flex-col lg:flex-row-reverse"
             }`}
           >
             <div className="lg:w-[30%] w-full h-full overflow-hidden relative flex items-center justify-center">
-              <img
-                src={`${data.profileImage}`}
-                alt={data.name + " ourTeam"}
-                className="w-[325px] h-[325px] object-cover object-top rounded-lg "
-              />
+              <div className="bg-gradient-to-br from-[#c7d2fe] via-[#e0e7ff] to-[#f3e8ff] rounded-2xl p-2 shadow-lg">
+                <img
+                  src={`${data.profileImage}`}
+                  alt={data.name + " ourTeam"}
+                  className="w-[250px] h-[250px] object-cover object-top rounded-xl shadow-md border-4 border-white"
+                />
+              </div>
             </div>
             <div
-              className={`border-[2px] border-blue-300 lg:w-[70%] w-full py-6 rounded-l-xl relative flex flex-col ${
+              className={`bg-white/90 border border-[#e0e7ff] shadow-xl lg:w-[70%] w-full py-8 rounded-2xl relative flex flex-col ${
                 data.id % 2
                   ? "lg:items-start items-center lg:text-start text-center"
                   : "lg:items-end lg:text-end items-center text-center"
-              } gap-3 px-6`}
+              } gap-4 px-8`}
             >
-              <h1 className="font-medium text-2xl leading-5">{data.name}</h1>
-              <h2 className="font-normal leading-5 text-xl tracking-wider">
+              <h1 className="font-semibold text-2xl leading-6 text-[#3b3b3b]">{data.name}</h1>
+              <h2 className="font-normal leading-5 text-lg tracking-wider text-[#6274f7]">
                 {`(${data.position})`}
               </h2>
-              <div className="flex gap-2 w-fit">
-                <span className="dark:hover:bg-black hover:bg-white/20 hover:text-white p-1.5 rounded-full duration-300">
-                  <FaLinkedin className="text-xl" />
+              <div className="flex gap-3 w-fit">
+                <span className="hover:bg-[#e0e7ff] hover:text-[#6274f7] p-2 rounded-full duration-300 cursor-pointer">
+                  <FaLinkedin className="text-2xl" />
                 </span>
-                <span className="dark:hover:bg-black hover:bg-white/20 hover:text-white p-1.5 rounded-full duration-300">
-                  <FaSquareInstagram className="text-xl" />
+                <span className="hover:bg-[#f3e8ff] hover:text-[#c026d3] p-2 rounded-full duration-300 cursor-pointer">
+                  <FaSquareInstagram className="text-2xl" />
                 </span>
               </div>
-              <p>{data.details}</p>
+              <p className="text-base text-[#3b3b3b] leading-relaxed">{data.details}</p>
             </div>
           </div>
         ))}
