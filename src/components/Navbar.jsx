@@ -17,6 +17,7 @@ import { RiTeamFill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { tr } from "framer-motion/client";
 
 const Navbar = () => {
   const { dark, themeHandler } = useDark();
@@ -70,24 +71,24 @@ const Navbar = () => {
         hidden: { opacity: 0 },
       }}
       animate={navHidden ? "hidden" : "visible"}
-      className="w-full fixed top-0 left-0 z-[90] dark:text-black text-white "
+  className="w-full fixed top-0 left-0 z-[90] text-black"
     >
       {/* links and logo */}
-      <div className="transition-all duration-300 ease-in  dark:bg-white bg-black flex items-center justify-between px-6 md:px-20 relative shadow-sm dark:shadow-white/10 shadow-black/10 py-3">
+  <div className="transition-all duration-300 ease-in bg-white flex items-center justify-between px-6 md:px-20 relative shadow-sm shadow-black/10 py-3">
         {/* logo */}
         <Link
           to={"/regentech/"}
           className="h-[50px]  flex items-center justify-center  md:w-[50px] overflow-hidden"
         >
           <img
-            src={dark === false ? logoDarkMood : logoLightMood}
+            src={dark === true ? logoDarkMood : logoLightMood}
             alt="regentech_logo"
             className="max-w-full h-full object-contain"
           />
         </Link>
 
         {/* desktop links page */}
-        <div className="hidden md:flex w-fit h-full items-center justify-center gap-6 dark:text-black/85 text-white/85 transition-all duration-300 ease-in">
+  <div className="hidden md:flex w-fit h-full items-center justify-center gap-6 text-black/85 transition-all duration-300 ease-in">
           <div className="w-fit py-2 px-2">
             <ul className="w-full flex items-center lg:gap-9 justify-center">
               {links.map((linksItems, index) => (
@@ -96,7 +97,7 @@ const Navbar = () => {
                   to={`${linksItems.url.toLocaleLowerCase()}`}
                   className={`LinkAnimation ${
                     linksItems.name === "LinkedIn" && "lg:block hidden"
-                  } capitalize dark:after:bg-white font-medium cursor-pointer text-white/85 transition-all duration-300 ease-in dark:text-black/85 text-xs lg:text-[1.1vw]`}
+                  } capitalize font-medium cursor-pointer text-black/85 transition-all duration-300 ease-in text-xs lg:text-[1.1vw]`}
                 >
                   {({ isActive }) => (
                     <span
@@ -118,7 +119,7 @@ const Navbar = () => {
         {/* Theme Toggle Btn */}
         <div
           onClick={() => themeHandler()}
-          className="hidden lg:flex items-center justify-center gap-4 text-amber-200 dark:text-white border-[2px] border-white/85 dark:border-black/85 rounded-full p-1.5  shadow-inner overflow-hidden transition-all duration-300 ease-in bg-black/80"
+          className="hidden lg:flex items-center justify-center gap-4 text-amber-200 border-[2px] border-black/85 rounded-full p-1.5  shadow-inner overflow-hidden transition-all duration-300 ease-in bg-white/80"
         >
           {dark === false ? (
             <motion.span
@@ -144,7 +145,7 @@ const Navbar = () => {
         </div>
 
         {/* moblie button => email, menu */}
-        <div  className="flex lg:hidden items-center justify-center gap-4 text-white/85 dark:text-black/85 transition-all duration-300 ease-in">
+  <div  className="flex lg:hidden items-center justify-center gap-4 text-black/85 transition-all duration-300 ease-in">
           <button onClick={() => setMenu(!menu)} className="text-md flex items-center justify-center">
             {menu ? <IoMdClose size={25}/> : <MdMenu size={25} />}
           </button>
@@ -156,7 +157,7 @@ const Navbar = () => {
       </div>
        {/* Mobile links page */}
         {menu && (
-          <div className="md:hidden h-screen float-end flex-col justify-start items-start px-8 flex w-[90%] bg-black dark:bg-white text-white/85 dark:text-white/85">
+          <div className="md:hidden h-screen float-end flex-col justify-start items-start px-8 flex w-[90%] bg-white text-black/85">
              <div className="w-fit h-fit py-2 px-2">
             <ul className="w-full flex items-start gap-6 py-6 flex-col justify-center">
               {links.map((linksItems, index) => (
@@ -166,7 +167,7 @@ const Navbar = () => {
                   to={`${linksItems.url.toLocaleLowerCase()}`}
                   className={`LinkAnimation ${
                     linksItems.name === "LinkedIn" && "lg:block hidden"
-                  } capitalize dark:after:bg-white font-medium cursor-pointer text-white/85 transition-all duration-300 ease-in dark:text-black/85 text-xs lg:text-[1.1vw]`}
+                  } capitalize font-medium cursor-pointer text-black/85 transition-all duration-300 ease-in text-xs lg:text-[1.1vw]`}
                 >
                   {({ isActive }) => (
                     <span
@@ -185,7 +186,7 @@ const Navbar = () => {
             {/* Theme Toggle Btn */}
         <div
           onClick={() => themeHandler()}
-          className="flex md:hidden h-fit w-fit items-center justify-center gap-4 text-amber-200 dark:text-white border-[2px] border-white/85 dark:border-black/85 rounded-full p-1.5 shadow-inner overflow-hidden transition-all duration-300 ease-in bg-black/80"
+          className="flex md:hidden h-fit w-fit items-center justify-center gap-4 text-amber-200 border-[2px] border-black/85 rounded-full p-1.5 shadow-inner overflow-hidden transition-all duration-300 ease-in bg-white/80"
         >
           {dark === false ? (
             <motion.span

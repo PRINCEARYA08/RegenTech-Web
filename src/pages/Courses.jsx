@@ -65,11 +65,11 @@ const Courses = () => {
   return (
     courseCardDetails.length >= 0 && (
       <Suspense fallback={<ComponentLoader />}>
-        <div className="w-full min-h-[100vh] relative dark:bg-black/85 bg-white/85 dark:text-black/85 text-white/85">
+  <div className="w-full min-h-[100vh] relative bg-white text-black">
           {/*******************************************************************************
            * Banner *
            *******************************************************************************/}
-          <div className="w-full min-h-[100vh] flex items-center justify-center bg-black dark:bg-white dark:text-black/85 text-white/85 relative overflow-hidden py-10">
+          <div className="w-full min-h-[100vh] flex items-center justify-center bg-white text-black relative overflow-hidden py-10">
             <div
               style={{ width: "100%", height: "600px", position: "relative" }}
             >
@@ -91,7 +91,7 @@ const Courses = () => {
               </div>
               <p
                 style={{
-                  color: dark === false ? "#ccc" : "#000",
+                  color: '#0c0c0cff',
                   letterSpacing: "1px",
                   fontSize: "20px",
                   width: "100%",
@@ -106,7 +106,7 @@ const Courses = () => {
               </p>
               <p
                 style={{
-                  color: dark === false ? "#ccc" : "#000",
+                  color: '#000',
                   letterSpacing: "1px",
                   fontSize: "12px",
                   width: "100%",
@@ -127,7 +127,7 @@ const Courses = () => {
            * Courses *
            *******************************************************************************/}
 
-          <div className=" flex flex-col py-10.5 bg-black/85 dark:bg-white/95 dark:text-black/85 text-white/85">
+          <div className="flex flex-col py-10.5 bg-white text-black">
             <div className="text-center w-full flex justify-center flex-col items-center gap-2">
               <BlurText
                 text="Explore Top Courses"
@@ -207,11 +207,11 @@ const Courses = () => {
                               </h3>
                               <p
                                 style={{
-                                   color: dark === false ? "#ccc" : "#000",
+                                   color: '#fcf7f7ff',
                                   fontSize: "12px",
                                   width: "90%",
                                 }}
-                                className="text-gray-600 text-sm leading-relaxed text-start"
+                                className="text-black text-sm leading-relaxed text-start"
                               >
                                 {cardsDet.courseDetailsLine}
                               </p>
@@ -228,10 +228,10 @@ const Courses = () => {
                                 ))}
                               </div>
                             )}
-                            <div className="flex items-center gap-4 mt-2.5 text-white/85">
+                            <div className="flex items-center gap-4 mt-2.5 text-black">
                               <Link
                                 to={""}
-                                className="w-fit px-4 py-2 rounded-full border-[1px] border-white text-[12px] flex items-center gap-2"
+                                className="w-fit px-4 py-2 rounded-full border-[1px] border-white text-[12px] flex items-center gap-2 text-white"
                               >
                                 <BsArrowReturnRight /> Enroll Now
                               </Link>
@@ -240,7 +240,7 @@ const Courses = () => {
                                 className="w-fit px-4 py-2 rounded-full border-[1px] border-white text-[12px] flex items-center gap-2"
                               >
                                 <BsCurrencyRupee />{" "}
-                                <span className="text-md tracking-wider">
+                                <span className="text-md tracking-wider text-white">
                                   {cardsDet.coursesPrice}
                                 </span>
                               </Link>
@@ -263,7 +263,7 @@ const Courses = () => {
           {/*******************************************************************************
            * Regentech Training Solutions *
            *******************************************************************************/}
-          <div className="w-full min-h-[100vh]  relative lg:px-20 px-0 flex flex-col gap-10 bg-black/80 dark:bg-white/85 justify-center py-10">
+          <div className="w-full min-h-[100vh]  relative lg:px-20 px-0 flex flex-col gap-10 bg-white justify-center py-10">
             <div className="text-center w-full flex justify-center flex-col items-center gap-2">
               <BlurText
                 text="Regentech Training Solutions"
@@ -313,7 +313,7 @@ const Courses = () => {
                       <p
                         style={{
                           fontSize: "13px",
-                          color: dark === false ? "#ccc" : "#000",
+                          color: '#000',
                         }}
                       >
                         {dets.paraLineOne}
@@ -321,7 +321,7 @@ const Courses = () => {
                       <p
                         style={{
                           fontSize: "13px",
-                          color: dark === false ? "#ccc" : "#000",
+                          color: '#000',
                         }}
                       >
                         {dets.paraLineTwo}
@@ -345,7 +345,7 @@ const Courses = () => {
            * Explore Top Featured Courses *
            *******************************************************************************/}
 
-          <div className="w-full min-h-[100vh] flex flex-col items-center justify-center gap-15 relative  px-5 bg-black/85 dark:bg-white/95">
+          <div className="w-full min-h-[100vh] flex flex-col items-center justify-center gap-15 relative  px-5 bg-white">
             <div className="text-center w-full flex justify-center flex-col items-center gap-2">
               <BlurText
                 text="Explore Top Featured Courses"
@@ -372,7 +372,7 @@ const Courses = () => {
                     Empower Your Career with In-Demand Tech Skills
                   </h1>
                   <p
-                    style={{ fontSize: "14px", color: dark === false ? "#ccc" : "#000" }}
+                    style={{ fontSize: "14px", color: '#000' }}
                     className="font-normal tracking-normal w-[95%]"
                   >
                     Kickstart your journey into the digital world with our

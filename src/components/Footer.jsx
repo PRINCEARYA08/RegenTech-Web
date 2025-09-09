@@ -7,7 +7,7 @@ const Footer = () => {
   const { dark } = useDark();
   return (
     <div className="w-full h-full relative">
-      <footer className="relative bg-black/95 dark:bg-white/95 py-12 dark:text-black/85 text-white/85">
+      <footer className="relative bg-white py-12 text-black">
         <div className="absolute inset-0 bg-cover bg-center"></div>
 
         <div className="relative container mx-auto px-6">
@@ -17,28 +17,28 @@ const Footer = () => {
               <div className="mb-6">
                 <a href="/regentech/">
                   <img
-                    src={dark === false ? footerLogoBlack : footerLogo}
+                    src={dark === true ? footerLogoBlack : footerLogo}
                     alt="Regentech"
                     className="w-[150px] h-auto"
                   />
                 </a>
               </div>
-              <div className="flex space-x-4 mt-4 text-white/85">
+              <div className="flex space-x-4 mt-4 text-black/80">
                 <a
                   href="https://www.linkedin.com/company/regentech-institute/"
-                  className="bg-[#4b505d] hover:bg-[#074473] w-10 h-10 rounded-full flex items-center justify-center"
+                  className="bg-[#e0e7ff] hover:bg-[#6274f7] w-10 h-10 rounded-full flex items-center justify-center text-[#1a237e] hover:text-white transition-colors"
                 >
                   <FaLinkedin />
                 </a>
                 <a
                   href="http://www.regentech.in"
-                  className="bg-[#4b505d] hover:bg-[#074473] w-10 h-10 rounded-full flex items-center justify-center"
+                  className="bg-[#e0e7ff] hover:bg-[#6274f7] w-10 h-10 rounded-full flex items-center justify-center text-[#1a237e] hover:text-white transition-colors"
                 >
                   <FaGooglePlusG />
                 </a>
                 <a
                   href="https://www.instagram.com/regentechinstitute?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                  className="bg-[#4b505d] hover:bg-[#074473] w-10 h-10 rounded-full flex items-center justify-center"
+                  className="bg-[#e0e7ff] hover:bg-[#c026d3] w-10 h-10 rounded-full flex items-center justify-center text-[#c026d3] hover:text-white transition-colors"
                 >
                   <FaInstagram />
                 </a>
@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-[#353a49] mt-12 pt-6 text-center text-[#b5b8be] text-sm">
+          <div className="border-t border-[#e0e7ff] mt-12 pt-6 text-center text-[#6274f7] text-sm">
             <p>
               &copy; {new Date().getFullYear()} All rights reserved | by
               Regentech Institute

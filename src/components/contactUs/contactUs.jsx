@@ -57,16 +57,23 @@ export default function ContactUs() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-400 via-purple-400 to-purple-600 p-4">
       <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
+        <br/>
+        <br/>
         {/* Gradient Header */}
-        <div className="relative h-40 bg-gradient-to-tr from-blue-500 via-purple-500 to-purple-400 flex flex-col items-center justify-center">
+        <div className="relative h-30 bg-gradient-to-tr from-blue-400 via-purple-500 to-purple-400 flex flex-col items-center justify-center">
           {/* Logo Placeholder */}
-          <div className="mb-2">
-            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="30" cy="20" rx="12" ry="18" fill="#fff" fillOpacity="0.9"/>
-              <ellipse cx="45" cy="30" rx="8" ry="14" fill="#fff" fillOpacity="0.7"/>
-            </svg>
+          
+            <div className="mb-2">
+            <img
+              src="images/logo/logo.png"
+              alt="RegenTech Logo"
+              width={60}
+              height={60}
+              className="mx-auto"
+              style={{ objectFit: "contain" }}
+            />
           </div>
-          <h2 className="text-white text-2xl font-bold tracking-wide drop-shadow">MOFINOW</h2>
+          <h2 className="text-white text-2xl font-bold tracking-wide drop-shadow">RegenTech</h2>
         </div>
         {/* Card Content */}
         <div className="px-8 py-8">
