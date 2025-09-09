@@ -107,14 +107,14 @@ const router = createBrowserRouter([
           </Suspense>
         ),
       },
-      // {
-      //   path: "contactus",
-      //   element: (
-      //     <Suspense fallback={<ComponentLoader />}>
-      //       <ContactUs />
-      //     </Suspense>
-      //   ),
-      // }
+      {
+        path: "contactus",
+        element: (
+          <Suspense fallback={<ComponentLoader />}>
+            {React.createElement(lazy(() => import("../components/contactUs/contactUs.jsx")))}
+          </Suspense>
+        ),
+      }
     ],
   },
 ]);
