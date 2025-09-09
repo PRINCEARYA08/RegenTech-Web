@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Welcomanimation from "./components/Animation/Welcomanimation.jsx";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 const App = () => {
   const [visiHidden, setVisiHidden] = useState(true);
@@ -17,18 +18,17 @@ const App = () => {
 
   return (
     <>
+      <ScrollToTop />
       {visiHidden ? (
         <AnimatePresence>
           <Welcomanimation />
         </AnimatePresence>
       ) : (
-     
           <div className="w-full min-h-[100vh] relative">
             <Navbar />
             <Outlet />
             <Footer />
           </div>
-  
       )}
     </>
   );
