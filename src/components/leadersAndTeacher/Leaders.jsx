@@ -119,7 +119,7 @@ const details = [
       },
       {
         platform: "instagram",
-        link: "",
+        link: "https://www.instagram.com/mr.sumit_janoriya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       },
     ],
     position: "Robotics",

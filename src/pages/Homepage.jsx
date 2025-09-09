@@ -130,7 +130,64 @@ const Homepage = () => {
         {/*****************************************************************
          *  Our Popular Courses *
          *****************************************************************/}
+      <div className="w-full px-4 sm:px-6 md:px-10 lg:px-20 my-16">
+  <div className="flex flex-col md:flex-row bg-blue-600 rounded-2xl shadow-lg px-6 sm:px-10 md:px-14 lg:px-16 py-10 items-center">
+    {/* ------- Left Section ------- */}
+    <div className="flex-1 text-center md:text-left">
+      {/* Heading */}
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-snug">
+        RegenTech Institute – Your <br /> Pathway to Placement.
+      </h1>
 
+      {/* Description */}
+      <p className="text-white/90 mt-4 max-w-md mx-auto md:mx-0 text-sm sm:text-base">
+        Empowering you with cutting-edge learning in AI, Web Development,
+        Robotics, and more—all in one place.
+      </p>
+
+      {/* Avatars + Button */}
+      <div className="flex items-center justify-center md:justify-start gap-4 mt-6">
+        {/* Avatars */}
+        <div className="flex -space-x-3">
+          <img
+            src="public/images/adiImg/k1.png"
+            alt="user1"
+            className="w-10 h-10 rounded-full border-2 border-white"
+          />
+          <img
+            src="public/images/adiImg/k2.png"
+            alt="user2"
+            className="w-10 h-10 rounded-full border-2 border-white"
+          />
+          <img
+            src="public/images/adiImg/k4.png"
+            alt="user3"
+            className="w-10 h-10 rounded-full border-2 border-white"
+          />
+        </div>
+
+        {/* Button */}
+        <button className="bg-white text-sm sm:text-base text-black px-6 sm:px-8 py-3 rounded-full font-medium flex items-center gap-2 hover:scale-105 transition-all">
+          Know more →
+        </button>
+      </div>
+    </div>
+
+    {/* ------- Right Section (Image) ------- */}
+    <div className="md:w-1/2 lg:w-[360px] relative mt-10 md:mt-0">
+      <img
+        src="public/images/banner/d1.png"
+        alt="Banner"
+        className="w-full max-w-sm mx-auto drop-shadow-lg"
+      />
+    </div>
+  </div>
+</div>
+
+
+
+
+{/* bnner */}
         <div
           className={`${
             dark === false ? "bg-black/90 text-white/85 " : "bg-white/95 text-black"
