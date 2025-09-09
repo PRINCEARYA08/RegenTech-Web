@@ -13,6 +13,12 @@ const communityMembers = [
   { id: 10, img: "images/partner/p10.png", name: "Olivia Brown" },
   { id: 11, img: "images/partner/p11.png", name: "Noah Davis" },
   { id: 12, img: "images/partner/p12.png", name: "Sophia Martinez" },
+  { id: 13, img: "images/partner/p13.png", name: "Ethan Garcia" },
+  { id: 14, img: "images/partner/p14.png", name: "Isabella Hernandez" },  
+  { id: 15, img: "images/partner/p15.png", name: "Mason Lopez" },
+  { id: 16, img: "images/partner/p16.png", name: "Mia Gonzalez" },
+  { id: 17, img: "images/partner/p17.png", name: "Oliver Sanchez" },
+  { id: 18, img: "images/partner/p18.png", name: "Ava Ramirez" },
 ];
 
 const Community = () => {
