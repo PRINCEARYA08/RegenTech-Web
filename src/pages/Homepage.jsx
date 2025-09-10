@@ -39,11 +39,13 @@ const Homepage = () => {
 {/* ------- Section Wrapper ------- */}
 <div className="w-full px-4 sm:px-6 md:px-10 lg:px-20 my-16">
 
+
+
   {/* Add some spacing above */}
-  <div className="h-12"></div> {/* This creates vertical space, you can adjust h-12 to h-20 etc. */}
+  <div className="h-24"></div> {/* This creates vertical space, you can adjust h-12 to h-20 etc. */}
 
   {/* ------- Banner / Content ------- */}
-  <div className="flex flex-col md:flex-row bg-blue-600 rounded-2xl shadow-lg px-6 sm:px-10 md:px-14 lg:px-16 py-10 items-center">
+  <div className="flex flex-col md:flex-row bg-blue-600 rounded-2xl shadow-lg px-6 sm:px-10 md:px-14 lg:px-16 py-40 items-center">
     {/* ------- Left Section ------- */}
     <div className="flex-1 text-center md:text-left">
       {/* Heading */}
@@ -52,7 +54,7 @@ const Homepage = () => {
       </h1>
 
       {/* Description */}
-      <p className="text-white/90 mt-4 max-w-md mx-auto md:mx-0 text-sm sm:text-base">
+      <p className="text-white mt-4 max-w-md mx-auto md:mx-0 text-sm sm:text-base">
         Empowering you with cutting-edge learning in AI, Web Development,
         Robotics, and more—all in one place.
       </p>
@@ -115,7 +117,7 @@ const Homepage = () => {
             dark === false ? "bg-black/85 text-white/85 " : "bg-white/90 text-black"
           }`}
         >
-          <TextPressure
+          {/* <TextPressure
             text="Regentech"
             flex={true}
             alpha={false}
@@ -126,60 +128,62 @@ const Homepage = () => {
             textColor={dark === false ? "#ccc" : "#000"}
             strokeColor="#ff0000"
             minFontSize={20}
-          />
+          /> */}
+          
 
           {/* cards */}
 
-         <div className="w-full relative my-16">
-  <div className="flex flex-row gap-10 overflow-x-auto px-8 py-6 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
+        <div className="w-full relative my-16">
+  <div className="flex flex-row gap-10 overflow-x-auto px-8 py-6 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200">
     {welcomeCardsDetail.map((cardData, cardIndex) => (
       <div
         key={cardIndex}
-        className="min-w-[320px] md:min-w-[380px] flex flex-col justify-between p-6 bg-gradient-to-b from-gray-900/40 to-gray-800/20 rounded-xl border border-gray-700 shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300"
+        className="min-w-[320px] md:min-w-[380px] flex flex-col justify-between p-6 bg-white rounded-xl border border-gray-300 shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300"
       >
         {/* Title */}
-        <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mb-6">
           {cardData.title}
         </h2>
 
         {/* Description */}
-        <p className="text-gray-300 leading-relaxed text-sm md:text-base mb-8">
+        <p className="text-gray-700 leading-relaxed text-sm md:text-base mb-8">
           {cardData.des}
         </p>
 
         {/* Button */}
         {cardData.title === "The Experts" && (
           <Link to="/regentech/ourteam">
-            <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
+            <button className="self-start px-6 py-2 rounded-full border border-gray-400 text-gray-800 font-medium hover:bg-black hover:text-white transition-colors duration-300">
               Meet Experts ↘
             </button>
           </Link>
         )}
         {cardData.title === "Live Projects" && (
           <Link to="/regentech/LiveProjects">
-          <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
-            View Projects ↘
-          </button>
+            <button className="self-start px-6 py-2 rounded-full border border-gray-400 text-gray-800 font-medium hover:bg-black hover:text-white transition-colors duration-300">
+              View Projects ↘
+            </button>
           </Link>
         )}
         {cardData.title === "Awards & Achivements" && (
           <Link to="/regentech/awards">
-            <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
+            <button className="self-start px-6 py-2 rounded-full border border-gray-400 text-gray-800 font-medium hover:bg-black hover:text-white transition-colors duration-300">
               See Awards ↘
             </button>
           </Link>
         )}
         {cardData.title === "Community" && (
           <Link to="/regentech/community">
-          <button className="self-start px-6 py-2 rounded-full border border-gray-500 text-gray-200 font-medium hover:bg-white hover:text-black transition-colors duration-300">
-            Join Community ↘
-          </button>
+            <button className="self-start px-6 py-2 rounded-full border border-gray-400 text-gray-800 font-medium hover:bg-black hover:text-white transition-colors duration-300">
+              Join Community ↘
+            </button>
           </Link>
         )}
       </div>
     ))}
   </div>
 </div>
+
 
 
 
