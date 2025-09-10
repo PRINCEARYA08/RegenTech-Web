@@ -24,7 +24,7 @@ const LeaderShip = () => {
         <div className="flex items-center flex-col justify-center w-full">
           <img
             src={owner1}
-            className="w-[500px] h-[250px] object-cover object-top rounded-lg "
+            className="w-[500px] h-[450px] object-cover object-top rounded-lg "
           />
           <div className="pt-5 text-center">
              <h1 className="font-medium text-2xl leading-normal">
@@ -39,7 +39,7 @@ const LeaderShip = () => {
          <div className="flex items-center flex-col justify-center ">
           <img
             src={owner2}
-            className="w-[500px] h-[250px] object-cover object-top rounded-lg "
+            className="w-[500px] h-[450px] object-cover object-top rounded-lg "
           />
           <div className="pt-5 text-center">
              <h1 className="font-medium text-2xl leading-normal">
